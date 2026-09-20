@@ -213,5 +213,5 @@ if __name__ == "__main__":
         # dot.render('graph')
         for p in n.parameters():
             p.data += -0.05 * p.grad 
-            #可以有不同的梯度更新函数，此处的0.01就是learning rate
+            #可以有不同的梯度更新函数，此处的0.05就是learning rate
         print(k, loss.data)
